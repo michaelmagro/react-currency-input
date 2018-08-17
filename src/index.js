@@ -245,7 +245,7 @@ class CurrencyInput extends Component {
     render() {
         return (
             <Input
-                ref={(input) => { this.theInput = input; }}
+                inputRef={(input) => { this.theInput = input; }}
                 type={this.props.inputType}
                 value={this.state.maskedValue}
                 onChange={this.handleChange}
