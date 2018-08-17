@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import React, { Component }  from 'react'
 import ReactDOM from 'react-dom'
 import mask from './mask.js'
+import Input from '@material-ui/core/Input';
 
 // IE* parseFloat polyfill
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/parseFloat#Polyfill
@@ -243,7 +244,7 @@ class CurrencyInput extends Component {
      */
     render() {
         return (
-            <input
+            <Input
                 ref={(input) => { this.theInput = input; }}
                 type={this.props.inputType}
                 value={this.state.maskedValue}
